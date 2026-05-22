@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - GitHub Issue Tracker</title>
+
+    <!-- Tailwindcss, Fontawesome and App.css file -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-slate-200 via-slate-100 to-slate-200 font-sans text-slate-800"
+  >
+    <main class="grid min-h-screen place-items-center px-4 py-8 sm:py-10">
+      <section
+        class="w-full max-w-md rounded-xl bg-white p-6 shadow-lg sm:p-8"
+        aria-label="Sign in form"
+      >
+        <header class="text-center">
+          <img
+            class="mx-auto mb-2 block h-20 w-20 object-contain"
+            src="assets/github-logo.png"
+            alt="GitHub logo"
+          />
+          <h1 class="text-2xl font-bold">GitHub Issues Tracker</h1>
+          <p class="mt-2 text-sm text-slate-500">
+            Sign in to manage your issues
+          </p>
+        </header>
+
+        <!-- Login Form section  -->
+        <form class="mt-8 space-y-4" action="#" method="post" novalidate>
+          <div class="space-y-2">
+            <label for="username" class="font-bold">Username</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="Enter Username"
+              autocomplete="username"
+              class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-3 text-sm outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-200"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label for="password" class="font-bold">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Enter Password"
+              autocomplete="current-password"
+              class="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-3 text-sm outline-none transition focus:border-violet-500 focus:ring-2 focus:ring-violet-200"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full cursor-pointer rounded-lg bg-indigo-600 px-4 py-3 font-extrabold text-white shadow-md transition hover:-translate-y-0.5 active:translate-y-0"
+          >
+            Sign In
+          </button>
+        </form>
+
+        <div class="flex items-center">
+          <div
+            aria-hidden="true"
+            class="w-full border-t border-gray-300 dark:border-white/15 my-10"
+          ></div>
+          <div class="relative flex justify-center">
+            <span
+              class="bg-white px-3 text-base font-semibold text-gray-900 dark:bg-gray-900 dark:text-white"
+              >OR</span
+            >
+          </div>
+          <div
+            aria-hidden="true"
+            class="w-full border-t border-gray-300 dark:border-white/15"
+          ></div>
+        </div>
+
+        <p class="mb-2 text-sm font-semibold text-slate-500 text-center">
+          Demo Credentials:
+        </p>
+        <section
+          class="rounded-lg bg-slate-100 p-4 text-center"
+          aria-label="Demo credentials"
+        >
+          <p class="my-1 text-base"><strong>Username:</strong> admin</p>
+          <p class="my-1 text-base"><strong>Password:</strong> admin123</p>
+        </section>
+      </section>
+    </main>
+
+    <script src="assets/login.js"></script>
+  </body>
+</html>
