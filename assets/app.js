@@ -352,7 +352,6 @@ const showIssueDetails = async (issueId) => {
     dialog.assignee.textContent = issue.assignee || "Unassigned";
 };
 
-// Handle tab change
 const handleTabChange = async (tab) => {
   appState.currentFilter = tab;
   appState.searchQuery = ""; // Reset search when changing tabs
@@ -368,7 +367,6 @@ const handleTabChange = async (tab) => {
   updateIssueCount(filteredIssues.length);
 };
 
-// Handle search
 const handleSearch = async () => {
   const elements = getElements();
   const query = elements.searchInput?.value.trim() || "";
