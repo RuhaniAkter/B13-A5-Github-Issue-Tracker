@@ -393,7 +393,6 @@ const handleIssueClick = (event) => {
   showIssueDetails(issueId);
 };
 
-// Initialize event listeners
 const initializeEventListeners = () => {
   const elements = getElements();
 
@@ -417,7 +416,6 @@ const initializeEventListeners = () => {
     elements.grid.addEventListener("click", handleIssueClick);
   }
 
-  // Search functionality
   if (elements.searchInput) {
     elements.searchInput.addEventListener("keypress", (event) => {
       if (event.key === "Enter") {
@@ -425,7 +423,6 @@ const initializeEventListeners = () => {
       }
     });
 
-    // Auto-reload all issues when search is cleared
     elements.searchInput.addEventListener("input", (event) => {
       if (event.target.value.trim() === "") {
         handleSearch();
